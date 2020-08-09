@@ -1,0 +1,10 @@
+{
+  "name": "learn-node",
+  "version": "1.0.0",
+  "description": "学习node.js API",
+  "main": "index.js",
+  "repository": "git@github.com:EarthShakers/node.git",
+  "author": "李卓超 <lizhuochao@codemao.cn>",
+  "license": "MIT",
+  "private": false
+}
