@@ -99,3 +99,14 @@ console.log(http);
   globalAgent: [Getter/Setter]
 }
 ```
+## http.createServer()
+该函数接受一个可选的`requestListener`回调函数，返回值是`http.Server`类的实例，http服务器内部会创建`http.ServerResponse`和`http.IncomingMessage`类的实例对象，分别传入`response`和`request`事件
+```
+const http = require('http')
+const server = http.createServer((req:IncomingMessage,res:ServerResponse):Server=>{
+    res.write('hello\n');
+    res.end();
+})
+```
+## http.request()
+

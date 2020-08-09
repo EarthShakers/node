@@ -13,7 +13,7 @@ net 用于创建基于流的 TCP 或 IPC 的服务器（net.createServer()）与
     net.connect()和net.createConnection()相同，用于创建客户端socket对象，返回值相当于new net.Socket()
 
   4.  `createServer`: [Function: createServer],
-    net.createServer()创建一个新的 TCP 或 IPC 服务器。返回值相当于new net.Socket()
+    net.createServer()创建一个新的 TCP 或 IPC 服务器。返回值相当于new net.Server()
 
   5.  `isIP`: [Function: isIP],  
       测试输入是否是 IP 地址。无效的字符串则返回 0，IPv4 地址则返回 4，IPv6 的地址则返回 6。
