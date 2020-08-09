@@ -1,7 +1,7 @@
 const net = require("net");
 const server = net
   .createServer((socket) => {
-    socket.end("再见\n");
+    socket.write("hello client!!!!");
   })
   .on("error", (err) => {
     // 处理错误
@@ -21,9 +21,9 @@ server.listen(
   }
 );
 
-// server.close(() => {
-//   console.log("服务器已关闭");
-// });
+server.close(() => {
+  console.log("服务器已关闭");
+});
 
 server.on("close", () => {
   console.log("服务器关闭啦啦啦啦");
@@ -32,6 +32,3 @@ server.on("close", () => {
 server.getConnections((err, count) => {
   console.log(err, count);
 });
-
-server.unref();
-server.ref();
